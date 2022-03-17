@@ -1,8 +1,12 @@
+<%- include("../partials/header.ejs") %> 
 <% for(camp of campgrounds){ %>
     
     <ul>
         <li><a href="/campgrounds/<%= camp._id %>"><%= camp.title %></a> </li>
+       
         
     </ul>
 
  <% } %> 
+
+ <%- include("../partials/footer.ejs") %> 

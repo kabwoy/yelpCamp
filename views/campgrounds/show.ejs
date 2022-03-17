@@ -1,2 +1,10 @@
+<%- include("../partials/header.ejs") %> 
 <h1><%= foundData.title %> </h1>
 <h2><%= foundData.location %> </h2>
+<form action="/campgrounds/<%= foundData._id %>?_method=DELETE" method="post">
+    <button type="submit">Delete</button>
+</form>
+<br>
+<a href="/campgrounds/<%= foundData._id %>/edit">update</a>
+<a href="/campgrounds">Back Home</a>
+<%- include("../partials/footer.ejs") %> 
